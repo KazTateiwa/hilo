@@ -1,6 +1,12 @@
 
 <h1>HiLo Game</h1>
 
+<!-- Number was: <%= @result_string %> -->
+<hr/>
+<form action="game" method="get">
+  <input type="number" name="guess"/>
+  <input type="submit" value="Submit Number"/>
+</form>
 
 <h2>Your guess: <%= @guess %></h2>
 <h2>Guesses: <%= @guess_counter %></h2>

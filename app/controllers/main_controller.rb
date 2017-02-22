@@ -35,6 +35,7 @@ class MainController < ApplicationController
     # On each call, check the secret number against the guess (the parameter).
     if cookies[:secret].to_i == @guess
       @result = "You Win!"
+      @guess_counter += 1
       cookies[:secret] = nil
       # YOU WIN!
     elsif cookies[:secret].to_i > @guess
